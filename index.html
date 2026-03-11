@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>X</h1>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="certificates.html">🏅 Certificates</a>
+<a href="#resume">Resume</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section id="home" class="home">
+
+<img src="profile.png" class="profile">
+
+<h2>Hello, I'm X</h2>
+
+<p>Computer Science Student | Aspiring Software Developer</p>
+
+<button onclick="scrollProjects()">View Projects</button>
+
+</section>
+
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate developer interested in programming,
+algorithms and web development. I enjoy building
+applications and learning new technologies.
+</p>
+
+</section>
+
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skill">C++</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">GitHub</div>
+
+</section>
+
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project">
+
+<h3>Student Management System</h3>
+
+<p>System to manage student records.</p>
+
+<a href="student.html">View Project</a>
+
+</div>
+
+
+<div class="project">
+
+<h3>Online Voting System</h3>
+
+<p>Voting application with vote counting.</p>
+
+<a href="voting.html">View Project</a>
+
+</div>
+
+
+<div class="project">
+
+<h3>C++ Algorithms</h3>
+
+<p>Programs like GCD, prime check and divisors.</p>
+
+<a href="cpp.html">View Project</a>
+
+</div>
+
+</section>
+
+
+<section id="resume">
+
+<h2>Resume</h2>
+
+<p>You can download my resume below.</p>
+
+<a href="sample_resume.pdf" download>
+<button>Download Resume</button>
+</a>
+
+</section>
+
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<form onsubmit="return validateForm()">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="email" id="email" placeholder="Your Email">
+
+<textarea id="msg" placeholder="Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 Portfolio</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

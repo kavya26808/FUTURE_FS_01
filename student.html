@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Management System</title>
+<style>
+body{
+font-family:Arial;
+background:#0d1117;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid white;
+padding:10px;
+}
+
+button{
+padding:10px;
+margin:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Student Management System</h1>
+
+<h2>Student Records</h2>
+
+<table id="table">
+<tr>
+<th>Name</th>
+<th>Roll No</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>Rahul</td>
+<td>101</td>
+<td>85</td>
+</tr>
+</table>
+
+<h2>Add Student</h2>
+
+<input id="name" placeholder="Name">
+<input id="roll" placeholder="Roll No">
+<input id="marks" placeholder="Marks">
+
+<br>
+
+<button onclick="addStudent()">Add Student</button>
+
+<br><br>
+
+<a href="index.html">⬅ Back to Portfolio</a>
+
+<script>
+function addStudent(){
+
+let name=document.getElementById("name").value
+let roll=document.getElementById("roll").value
+let marks=document.getElementById("marks").value
+
+let table=document.getElementById("table")
+
+let row=table.insertRow()
+
+row.insertCell(0).innerText=name
+row.insertCell(1).innerText=roll
+row.insertCell(2).innerText=marks
+
+}
+</script>
+
+</body>
+</html>

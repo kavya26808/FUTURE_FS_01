@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Voting System</title>
+
+<style>
+body{
+font-family:Arial;
+background:#0d1117;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+button{
+padding:12px 20px;
+margin:10px;
+font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Online Voting System</h1>
+
+<h2>Vote for your Candidate</h2>
+
+<button onclick="voteA()">Candidate A</button>
+<button onclick="voteB()">Candidate B</button>
+
+<h3>Results</h3>
+
+<p>Candidate A Votes: <span id="a">0</span></p>
+<p>Candidate B Votes: <span id="b">0</span></p>
+
+<br>
+
+<a href="index.html">⬅ Back to Portfolio</a>
+
+<script>
+
+let a=0
+let b=0
+
+function voteA(){
+a++
+document.getElementById("a").innerText=a
+}
+
+function voteB(){
+b++
+document.getElementById("b").innerText=b
+}
+
+</script>
+
+</body>
+</html>
